@@ -70,6 +70,17 @@ namespace Metody
             return soucet;
         }
 
+        bool prvocislo(int a)
+        {
+            if (a <= 1) return false;
+            if (a == 2) return true;
+            for (int i = 3; i < a; ++i)
+            {
+                if (a % i == 0) return false;
+            }
+            return true;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             int x1 = Convert.ToInt32(textBox1.Text);
@@ -91,6 +102,9 @@ namespace Metody
 
             int a4 = Convert.ToInt32(textBox10.Text);
             label5.Text = SoucetLichCif(a4).ToString();
+
+            int a5 = Convert.ToInt32(textBox11.Text);
+            label6.Text = prvocislo(a5).ToString();
 
         }
     }
