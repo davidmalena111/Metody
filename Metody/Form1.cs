@@ -35,17 +35,28 @@ namespace Metody
             double vysledek = 1;
             if (b > 0)
             {
-                for (int i = 0; i < b; i++)
+                for (int i = 0; i < b; ++i)
                 {
                     vysledek *= a;
                 }
             }
             else if (b < 0)
             {
-                for (int i = 0; i > b; i--)
+                for (int i = 0; i > b; --i)
                 {
                     vysledek /= a;
                 }
+            }
+            return vysledek;
+        }
+
+        double faktorial(double a)
+        {
+            double vysledek = 1;
+            while (a > 0)
+            {
+                vysledek *= a;
+                --a;
             }
             return vysledek;
         }
@@ -55,6 +66,13 @@ namespace Metody
             int a = Convert.ToInt32(textBox1.Text);
             int b = Convert.ToInt32(textBox2.Text);
             label1.Text = mocnina(a, b).ToString();
+
+            int a1 = Convert.ToInt32(textBox1.Text);
+            int b1 = Convert.ToInt32(textBox2.Text);
+            label2.Text = mocnina(a1, b1).ToString();
+
+            double a2 = Convert.ToDouble(textBox1.Text);
+            label3.Text = faktorial(a2).ToString();
         }
     }
 }
