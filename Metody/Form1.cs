@@ -29,5 +29,32 @@ namespace Metody
             int y2 = Convert.ToInt32(textBox4.Text);
             label1.Text = vzdalenost(x1, y1, x2, y2).ToString();
         }
+
+        double mocnina(int a, int b)
+        {
+            double vysledek = 1;
+            if (b > 0)
+            {
+                for (int i = 0; i < b; i++)
+                {
+                    vysledek *= a;
+                }
+            }
+            else if (b < 0)
+            {
+                for (int i = 0; i > b; i--)
+                {
+                    vysledek /= a;
+                }
+            }
+            return vysledek;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int a = Convert.ToInt32(textBox1.Text);
+            int b = Convert.ToInt32(textBox2.Text);
+            label1.Text = mocnina(a, b).ToString();
+        }
     }
 }
