@@ -59,6 +59,17 @@ namespace Metody
             return soucet;
         }
 
+        int SoucetLichCif(int a)
+        {
+            int soucet = 0;
+            while (a > 0)
+            {
+                if ((a % 10) % 2 != 0) soucet += a % 10;
+                a /= 10;
+            }
+            return soucet;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             int x1 = Convert.ToInt32(textBox1.Text);
@@ -78,13 +89,9 @@ namespace Metody
             int b3= Convert.ToInt32(textBox9.Text);
             label4.Text = "Soucet je: " + soucet(a3, b3).ToString();
 
-        }
+            int a4 = Convert.ToInt32(textBox10.Text);
+            label5.Text = SoucetLichCif(a4).ToString();
 
-        
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
