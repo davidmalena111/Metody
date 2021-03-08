@@ -52,18 +52,32 @@ namespace Metody
             return vysledek;
         }
 
+        int soucet(int a, int b)
+        {
+            int soucet = 0;
+            soucet = a + b;
+            return soucet;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            int a = Convert.ToInt32(textBox1.Text);
-            int b = Convert.ToInt32(textBox2.Text);
-            label1.Text = mocnina(a, b).ToString();
+            int x1 = Convert.ToInt32(textBox1.Text);
+            int x2 = Convert.ToInt32(textBox3.Text);
+            int y1 = Convert.ToInt32(textBox2.Text);
+            int y2 = Convert.ToInt32(textBox4.Text);
+            label1.Text = "Vzdalenost je: " + vzdalenost(x1, y1, x2, y2).ToString();
 
-            int a1 = Convert.ToInt32(textBox1.Text);
-            int b1 = Convert.ToInt32(textBox2.Text);
-            label2.Text = mocnina(a1, b1).ToString();
+            int a = Convert.ToInt32(textBox5.Text);
+            int b = Convert.ToInt32(textBox6.Text);
+            label2.Text = "Mocnina je: " + mocnina(a, b).ToString();
 
-            double a2 = Convert.ToDouble(textBox1.Text);
-            label3.Text = faktorial(a2).ToString();
+            double a2 = Convert.ToDouble(textBox7.Text);
+            label3.Text = "Faktorial je: " + faktorial(a2).ToString();
+
+            int a3 = Convert.ToInt32(textBox8.Text);
+            int b3= Convert.ToInt32(textBox9.Text);
+            label4.Text = "Soucet je: " + soucet(a3, b3).ToString();
+
         }
 
         

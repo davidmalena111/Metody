@@ -40,11 +40,14 @@ namespace Metody
             this.label2 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(176, 187);
+            this.button1.Location = new System.Drawing.Point(567, 269);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 52);
             this.button1.TabIndex = 0;
@@ -68,7 +71,7 @@ namespace Metody
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(48, 110);
+            this.textBox3.Location = new System.Drawing.Point(48, 104);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 3;
@@ -84,21 +87,21 @@ namespace Metody
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(48, 145);
+            this.textBox4.Location = new System.Drawing.Point(48, 140);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 5;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(48, 219);
+            this.textBox5.Location = new System.Drawing.Point(48, 216);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 7;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(48, 263);
+            this.textBox6.Location = new System.Drawing.Point(48, 243);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 8;
@@ -122,17 +125,43 @@ namespace Metody
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(343, 337);
+            this.label3.Location = new System.Drawing.Point(343, 341);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 12;
             this.label3.Text = "label3";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(343, 437);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "label4";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(48, 418);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 16;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(48, 455);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.TabIndex = 17;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1170, 640);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.label2);
@@ -164,6 +193,9 @@ namespace Metody
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
 
